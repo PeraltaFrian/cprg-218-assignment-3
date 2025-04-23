@@ -54,9 +54,9 @@
 
 
 .hero-content p {
-  font-size: clamp(1.5rem, 2.5vw, 1.25rem);
-  opacity: 2.5; 
-  font-weight: 900; 
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  opacity: 2; 
+  font-weight: 200; 
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.75);
   color:white; 
 }
