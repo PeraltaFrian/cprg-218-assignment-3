@@ -1,0 +1,86 @@
+.room-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.room {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.room:nth-child(odd) {
+    flex-direction: row;  
+}
+
+.room:nth-child(even) {
+    flex-direction: row-reverse; 
+}
+
+.room-info {
+    max-width: 500px;
+    background-color: transparent;
+}
+
+.room-info h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.room-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.room-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.room-image {
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    text-align: center;
+    margin-top: 10px;
+}
+  
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .room {
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .room:nth-child(even),
+    .room:nth-child(odd) {
+        flex-direction: column;  
+    }
+}
+
+@media (max-width: 480px) {
+    .room-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .room-info p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,107 @@
+.restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+  
+.restaurant:nth-child(odd) {
+  flex-direction: row;
+}
+  
+.restaurant:nth-child(even) {
+  flex-direction: row-reverse;
+}
+  
+.dining-image {
+  width: 100%; 
+  max-width: 600px; 
+  max-height: 400px; 
+  object-fit: cover; 
+  border-radius: 8px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.restaurant h3 {
+  font-size: 1.8rem;
+  padding: 20px;
+}
+  
+.restaurant p {
+  font-size: 1.1rem;
+  color: #333;
+  padding: 20px;
+}
+  
+.restaurant ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #555;
+  padding: 20px;
+}
+  
+.restaurant ul li {
+  margin-bottom: 6px;
+}
+  
+.restaurant > *:not(img) {
+  max-width: 550px;
+}
+
+figure {
+  text-align: center;
+  margin: 20px;
+}
+  
+figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.other-dining-options {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+  
+.other-dining-options h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+  
+.other-dining-options ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #444;
+}
+  
+.other-dining-options li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+  
+@media (max-width: 768px) {
+  .restaurant {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  
+  .restaurant > *:not(img) {
+    max-width: 100%;
+  }
+  
+  .dining-image {
+      max-width: 100%;
+  }
+}
+  

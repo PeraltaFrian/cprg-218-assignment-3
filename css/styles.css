@@ -1,0 +1,236 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+h2 {
+  margin-top: 40px; 
+  font-size: 2rem; 
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+/* SECTION HEADERS - used all htmls  */
+
+.section-header {
+  text-align: center;
+  color: #272626;
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section-header .intro-text {
+  font-size: 1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section header p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: 300; 
+}
+
+.centered {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content {
+  padding: 40px 20px;
+}
+
+
+figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+
+/* BUTTONS */
+.btn {
+  background: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #005fa3;
+}
+
+/* TESTIMONIALS */
+/* Shared between index.html and testimonial.html */
+
+.testimonials-section {
+  margin-top: 40px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-image {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+  background-color: #f0f8f8;
+  border-left: 5px solid #0077cc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  font-style: italic;
+}
+
+footer {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* FEATURES and ROOMS */
+/* Shared between index.html and guest-rooms.html */
+
+.features,
+.accommodations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.feature,
+.room {
+  flex: 1 1 200px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.feature img,
+.room img {
+  max-width:300px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Notes */
+/* Shared between spa.html and activities.html */
+
+aside.notes {
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.notes h4 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.notes ul {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.notes li {
+  padding-left: 25px;
+  margin-bottom: 12px;
+  position: relative;
+  color: #444;
+}
+
+.notes li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0077cc;
+}
+
+.final-note {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #006d77; 
+  margin-top: 30px;
+  padding: 15px 20px;
+  background-color: #f0f8f8; 
+  border-left: 4px solid #0077cc;
+  border-radius: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+  .features,
+  .accommodations {
+    flex-direction: column;
+  }
+
+  .feature,
+  .room {
+    flex: 1 1 100%;
+  }
+}
